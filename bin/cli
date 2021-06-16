@@ -23,7 +23,7 @@
 // MODULES //
 
 var resolve = require( 'path' ).resolve;
-var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var readFileSync = require( '@stdlib/fs-read-file' ).sync;
 var CLI = require( '@stdlib/cli' );
 
 

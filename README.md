@@ -148,6 +148,20 @@ var speeches = sotu({
 
 <!-- /.usage -->
 
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+* * *
+
+## Notes
+
+-   The dataset includes the addresses given by newly inaugurated presidents to a joint session of Congress in Washington during their first year in office, even though these are technically not State of the Union addresses. 
+
+</section>
+
+<!-- /.notes -->
+
 <section class="examples">
 
 ## Examples
@@ -272,12 +286,11 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
+#### Community
+
+[![Chat][chat-image]][chat-url]
+
 ---
-
-## License
-
-See [LICENSE][stdlib-license].
-
 
 ## Copyright
 
@@ -300,14 +313,15 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/datasets-sotu/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/datasets-sotu?branch=main
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/datasets-sotu
+[dependencies-image]: https://img.shields.io/david/stdlib-js/datasets-sotu.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/datasets-sotu/main
+
+[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
+[chat-url]: https://gitter.im/stdlib-js/stdlib/
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/datasets-sotu/main/LICENSE
 
 [sotu]: https://en.wikipedia.org/wiki/State_of_the_Union
 

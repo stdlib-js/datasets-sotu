@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/datasets-sotu",
-  "version": "0.0.0",
+  "version": "0.0.8",
   "description": "State of the Union addresses by U.S. Presidents.",
   "license": "Apache-2.0",
   "author": {

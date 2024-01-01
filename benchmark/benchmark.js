@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var isObjectArray = require( '@stdlib/assert-is-plain-object-array' );
 var IS_BROWSER = require( '@stdlib/assert-is-browser' );
 var pkg = require( './../package.json' ).name;

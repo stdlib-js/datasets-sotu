@@ -52,7 +52,7 @@ The [State of the Union][sotu] address is an annual speech given by the Presiden
 To use in Observable,
 
 ```javascript
-sotu = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@umd/browser.js' )
+sotu = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@v0.2.0-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -64,7 +64,7 @@ var sotu = require( 'path/to/vendor/umd/datasets-sotu/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@v0.2.0-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -199,7 +199,7 @@ var speeches = sotu({
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@v0.2.0-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 

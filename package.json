@@ -58,7 +58,7 @@
     "@stdlib/fs-read-dir": "^0.2.1",
     "@stdlib/fs-read-file": "^0.2.1",
     "@stdlib/string-capitalize": "^0.2.1",
-    "@stdlib/string-format": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1",
     "@stdlib/string-remove-punctuation": "^0.2.1",
     "@stdlib/utils-copy": "^0.2.1",
     "@stdlib/utils-extname": "^0.2.1",

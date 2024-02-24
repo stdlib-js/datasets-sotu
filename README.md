@@ -50,6 +50,11 @@ The [State of the Union][sotu] address is an annual speech given by the Presiden
 ## Usage
 
 ```javascript
+import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-sotu/tags). For example,
+
+```javascript
 import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@v0.2.1-esm/index.mjs';
 ```
 
@@ -177,7 +182,7 @@ var speeches = sotu({
 <body>
 <script type="module">
 
-import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@v0.2.1-esm/index.mjs';
+import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@esm/index.mjs';
 
 var speeches;
 

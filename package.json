@@ -62,7 +62,8 @@
     "@stdlib/string-remove-punctuation": "^0.2.1",
     "@stdlib/utils-copy": "^0.2.1",
     "@stdlib/utils-extname": "^0.2.1",
-    "@stdlib/utils-keys": "^0.2.1"
+    "@stdlib/utils-keys": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-array": "^0.2.1",
@@ -75,7 +76,7 @@
     "@stdlib/regexp-eol": "^0.2.1",
     "@stdlib/string-replace": "^0.2.1",
     "@stdlib/time-current-year": "^0.2.1",
-    "@stdlib/utils-index-of": "^0.2.0",
+    "@stdlib/utils-index-of": "^0.2.1",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",

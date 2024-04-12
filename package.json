@@ -3,41 +3,7 @@
   "version": "0.2.1",
   "description": "State of the Union addresses by U.S. Presidents.",
   "license": "Apache-2.0",
-  "author": {
-    "name": "The Stdlib Authors",
-    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-  },
-  "contributors": [
-    {
-      "name": "The Stdlib Authors",
-      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-    }
-  ],
-  "bin": {
-    "sotu": "./bin/cli"
-  },
-  "main": "./lib",
-  "browser": {
-    "./lib/db.js": "./lib/browser_db.js",
-    "./lib/file_list.js": "./lib/browser_file_list.js",
-    "./lib/get_file.js": "./lib/browser_get_file.js"
-  },
-  "directories": {
-    "benchmark": "./benchmark",
-    "data": "./data",
-    "doc": "./docs",
-    "example": "./examples",
-    "lib": "./lib",
-    "scripts": "./scripts",
-    "test": "./test"
-  },
-  "types": "./docs/types",
-  "scripts": {
-    "test": "make test",
-    "test-cov": "make test-cov",
-    "examples": "make examples",
-    "benchmark": "make benchmark"
-  },
+  "main": "./index.js",
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -46,58 +12,6 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {
-    "@stdlib/assert-has-own-property": "^0.2.1",
-    "@stdlib/assert-is-number": "^0.2.1",
-    "@stdlib/assert-is-plain-object": "^0.2.1",
-    "@stdlib/assert-is-positive-integer": "^0.2.1",
-    "@stdlib/assert-is-positive-integer-array": "^0.2.1",
-    "@stdlib/assert-is-string": "^0.2.1",
-    "@stdlib/assert-is-string-array": "^0.2.1",
-    "@stdlib/cli-ctor": "^0.2.1",
-    "@stdlib/fs-read-dir": "^0.2.1",
-    "@stdlib/fs-read-file": "^0.2.1",
-    "@stdlib/string-capitalize": "^0.2.1",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.1",
-    "@stdlib/string-remove-punctuation": "^0.2.1",
-    "@stdlib/utils-copy": "^0.2.1",
-    "@stdlib/utils-extname": "^0.2.1",
-    "@stdlib/utils-keys": "^0.2.1",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
-  },
-  "devDependencies": {
-    "@stdlib/assert-is-array": "^0.2.1",
-    "@stdlib/assert-is-browser": "^0.2.1",
-    "@stdlib/assert-is-plain-object-array": "^0.2.1",
-    "@stdlib/assert-is-regexp": "^0.2.1",
-    "@stdlib/assert-is-windows": "^0.2.1",
-    "@stdlib/fs-write-file": "^0.2.1",
-    "@stdlib/process-exec-path": "^0.2.1",
-    "@stdlib/regexp-eol": "^0.2.1",
-    "@stdlib/string-replace": "^0.2.1",
-    "@stdlib/time-current-year": "^0.2.1",
-    "@stdlib/utils-index-of": "^0.2.1",
-    "proxyquire": "^2.0.0",
-    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.1"
-  },
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">2.7.0"
-  },
-  "os": [
-    "aix",
-    "darwin",
-    "freebsd",
-    "linux",
-    "macos",
-    "openbsd",
-    "sunos",
-    "win32",
-    "windows"
-  ],
   "keywords": [
     "stdlib",
     "datasets",

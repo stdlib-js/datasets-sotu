@@ -43,21 +43,189 @@ The [State of the Union][sotu] address is an annual speech given by the Presiden
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/datasets-sotu
+```
 
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var sotu = require( '@stdlib/datasets-sotu' );
+```
+
+#### sotu( \[options] )
+
+Returns [State of the Union][sotu] addresses.
+
+```javascript
+var speeches = sotu();
+// returns [{...},{...},...]
+```
+
+Each [State of the Union][sotu] address is represented by an `object` with the following fields:
+
+-   **year**: speech year.
+-   **name**: President name.
+-   **party**: the President's political party.
+-   **text**: speech text.
+
+The function accepts the following `options`:
+
+-   **name**: a President's name or an `array` of names.
+-   **party**: a political party or an `array` of political parties.
+-   **year**: a year or an `array` of years.
+-   **range**: two-element `array` specifying a year range.
+
+To retrieve speeches by one or more Presidents, set the `name` option.
+
+```javascript
+var speeches = sotu({
+    'name': 'Barack Obama'
+});
+// returns [{...},{...},...]
+
+speeches = sotu({
+    'name': [
+        'Franklin D Roosevelt',
+        'Barack Obama'
+    ]
+});
+// returns [{...},{...},...]
+```
+
+To retrieve speeches from Presidents belonging to a particular political party, set the `party` option.
+
+```javascript
+var speeches = sotu({
+    'party': 'Democratic'
+});
+// returns [{...},{...},...]
+
+speeches = sotu({
+    'party': [
+        'Federalist',
+        'Democratic'
+    ]
+});
+// returns [{...},{...},...]
+```
+
+The following parties are recognized:
+
+-   **Democratic**
+-   **Republican**
+-   **Democratic-Republican**
+-   **Federalist**
+-   **National Union**
+-   **Whig**
+-   **Whig & Democratic**
+-   **none**
+
+To retrieve speeches from one or more years, set the `year` option.
+
+```javascript
+var speeches = sotu({
+    'year': 2009
+});
+// returns [{...}]
+
+speeches = sotu({
+    'year': [
+        1942,
+        2009
+    ]
+});
+// returns [{...},{...}]
+```
+
+To specify a range of consecutive years, set the `range` option, where the first element corresponds to the starting year and the second element corresponds to the final year.
+
+```javascript
+var speeches = sotu({
+    'range': [ 2009, 2016 ]
+});
+// returns [{...},{...},...]
+```
+
+</section>
+
+<!-- /.usage -->
 
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
+<section class="notes">
 
+* * *
 
+## Notes
 
+-   The dataset includes the addresses given by newly inaugurated presidents to a joint session of Congress in Washington during their first year in office, even though these are technically not State of the Union addresses. 
 
+</section>
 
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var sotu = require( '@stdlib/datasets-sotu' );
+
+var speeches;
+
+// Get a range of speeches:
+speeches = sotu({
+    'range': [ 2009, 2013 ]
+});
+// returns [...]
+
+// Get speeches by one or more Presidents:
+speeches = sotu({
+    'name': [
+        'Abraham Lincoln',
+        'William J Clinton'
+    ]
+});
+console.log( 'Number of addresses by Abraham Lincoln and Bill Clinton: %d', speeches.length );
+
+// Get all addresses by Presidents belonging to the Democratic Party:
+speeches = sotu({
+    'party': 'Democratic'
+});
+console.log( 'Number of addresses by Democrats: %d', speeches.length );
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -75,7 +243,7 @@ npm install -g @stdlib/datasets-sotu-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: sotu [options]
@@ -96,7 +264,7 @@ Options:
 
 <section class="notes">
 
-## Notes
+### Notes
 
 -   Data is written to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
@@ -106,7 +274,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ sotu --name 'Barack Obama' --year 2009
@@ -135,11 +303,6 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 <section class="related">
 
-## See Also
-
--   <span class="package-name">[`@stdlib/datasets-sotu`][@stdlib/datasets-sotu]</span><span class="delimiter">: </span><span class="description">state of the Union addresses by U.S. Presidents.</span>
-
-
 </section>
 
 <!-- /.related -->
@@ -157,7 +320,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -175,11 +338,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-sotu-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/datasets-sotu-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-sotu.svg
+[npm-url]: https://npmjs.org/package/@stdlib/datasets-sotu
 
-[test-image]: https://github.com/stdlib-js/datasets-sotu/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/datasets-sotu/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/datasets-sotu/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/datasets-sotu/actions/workflows/test.yml?query=branch:v0.2.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/datasets-sotu/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/datasets-sotu?branch=main

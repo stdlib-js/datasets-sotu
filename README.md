@@ -50,7 +50,7 @@ The [State of the Union][sotu] address is an annual speech given by the Presiden
 ## Usage
 
 ```javascript
-import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@esm/index.mjs';
+import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@v0.2.2-esm/index.mjs';
 ```
 
 #### sotu( \[options] )
@@ -177,7 +177,7 @@ var speeches = sotu({
 <body>
 <script type="module">
 
-import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@esm/index.mjs';
+import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@v0.2.2-esm/index.mjs';
 
 var speeches;
 

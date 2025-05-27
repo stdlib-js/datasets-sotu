@@ -4,15 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-07)
+## Unreleased (2025-05-27)
 
 <section class="issues">
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#5857](https://github.com/stdlib-js/stdlib/issues/5857)
+[#5857](https://github.com/stdlib-js/stdlib/issues/5857), [#6577](https://github.com/stdlib-js/stdlib/issues/6577)
 
 </section>
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`653a7a0`](https://github.com/stdlib-js/stdlib/commit/653a7a0e5b16e06b5221c309b07bbdf3d705cc08) - **chore:** fix JavaScript lint errors [(#7096)](https://github.com/stdlib-js/stdlib/pull/7096) _(by Swapnil Hajare, Philipp Burckhardt)_
 -   [`6010275`](https://github.com/stdlib-js/stdlib/commit/601027582bebc4b2f76cf9ea598a9646759f6bff) - **chore:** fix EditorConfig lint errors by replacing tabs with spaces [(#5910)](https://github.com/stdlib-js/stdlib/pull/5910) _(by Dhanyabad behera)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
 
@@ -37,10 +38,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Dhanyabad behera
 -   Philipp Burckhardt
+-   Swapnil Hajare
 
 </section>
 

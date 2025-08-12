@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-28)
+## Unreleased (2025-08-12)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
 -   [`5df47c3`](https://github.com/stdlib-js/stdlib/commit/5df47c33138ddac50e4a9cfb8f0b22c1821e046b) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`653a7a0`](https://github.com/stdlib-js/stdlib/commit/653a7a0e5b16e06b5221c309b07bbdf3d705cc08) - **chore:** fix JavaScript lint errors [(#7096)](https://github.com/stdlib-js/stdlib/pull/7096) _(by Swapnil Hajare, Philipp Burckhardt)_
 -   [`6010275`](https://github.com/stdlib-js/stdlib/commit/601027582bebc4b2f76cf9ea598a9646759f6bff) - **chore:** fix EditorConfig lint errors by replacing tabs with spaces [(#5910)](https://github.com/stdlib-js/stdlib/pull/5910) _(by Dhanyabad behera)_

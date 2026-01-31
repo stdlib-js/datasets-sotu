@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-12)
+## Unreleased (2026-01-31)
 
 <section class="issues">
 
@@ -24,10 +24,14 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`7add020`](https://github.com/stdlib-js/stdlib/commit/7add0201c13e56a0381926ccfd4073c84eaf2ed4) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`11581aa`](https://github.com/stdlib-js/stdlib/commit/11581aaca8c3cb824cbb92c0c0f80e76890bdb20) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`c894b66`](https://github.com/stdlib-js/stdlib/commit/c894b664661bfb87286304b24dd5a1758ae482b7) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
 -   [`5df47c3`](https://github.com/stdlib-js/stdlib/commit/5df47c33138ddac50e4a9cfb8f0b22c1821e046b) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`653a7a0`](https://github.com/stdlib-js/stdlib/commit/653a7a0e5b16e06b5221c309b07bbdf3d705cc08) - **chore:** fix JavaScript lint errors [(#7096)](https://github.com/stdlib-js/stdlib/pull/7096) _(by Swapnil Hajare, Philipp Burckhardt)_
--   [`6010275`](https://github.com/stdlib-js/stdlib/commit/601027582bebc4b2f76cf9ea598a9646759f6bff) - **chore:** fix EditorConfig lint errors by replacing tabs with spaces [(#5910)](https://github.com/stdlib-js/stdlib/pull/5910) _(by Dhanyabad behera)_
+-   [`6010275`](https://github.com/stdlib-js/stdlib/commit/601027582bebc4b2f76cf9ea598a9646759f6bff) - **chore:** fix EditorConfig lint errors by replacing tabs with spaces [(#5910)](https://github.com/stdlib-js/stdlib/pull/5910) _(by Dhanyabad Behera)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
 
 </details>
@@ -42,7 +46,7 @@ A total of 2 issues were closed in this release:
 
 A total of 3 people contributed to this release. Thank you to the following contributors:
 
--   Dhanyabad behera
+-   Dhanyabad Behera
 -   Philipp Burckhardt
 -   Swapnil Hajare
 

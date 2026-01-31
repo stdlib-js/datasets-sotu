@@ -66,6 +66,7 @@
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
+    "@stdlib/array-base-filled": "^0.2.2",
     "@stdlib/assert-is-array": "^0.2.2",
     "@stdlib/assert-is-browser": "^0.2.2",
     "@stdlib/assert-is-plain-object-array": "^0.2.2",

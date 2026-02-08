@@ -43,38 +43,33 @@ The [State of the Union][sotu] address is an annual speech given by the Presiden
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/datasets-sotu
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-sotu = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var sotu = require( 'path/to/vendor/umd/datasets-sotu/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.sotu;
-})();
-</script>
+var sotu = require( '@stdlib/datasets-sotu' );
 ```
 
 #### sotu( \[options] )
@@ -195,13 +190,8 @@ var speeches = sotu({
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var sotu = require( '@stdlib/datasets-sotu' );
 
 var speeches;
 
@@ -225,18 +215,79 @@ speeches = sotu({
     'party': 'Democratic'
 });
 console.log( 'Number of addresses by Democrats: %d', speeches.length );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/datasets-sotu-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: sotu [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --name n1,n2,...      President names.
+         --party p1,p2,...     Political parties.
+         --year y1,y2,...      Years.
+         --range r1,r2         Year range.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+### Notes
+
+-   Data is written to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ sotu --name 'Barack Obama' --year 2009
+{"name":"Barack Obama","year":2009,"party":"Democratic","text":"..."}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- <license> -->
 
@@ -290,8 +341,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-sotu.svg
 [npm-url]: https://npmjs.org/package/@stdlib/datasets-sotu
 
-[test-image]: https://github.com/stdlib-js/datasets-sotu/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/datasets-sotu/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/datasets-sotu/actions/workflows/test.yml/badge.svg?branch=v0.2.3
+[test-url]: https://github.com/stdlib-js/datasets-sotu/actions/workflows/test.yml?query=branch:v0.2.3
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/datasets-sotu/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/datasets-sotu?branch=main

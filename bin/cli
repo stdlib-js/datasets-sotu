@@ -89,7 +89,7 @@ function main() {
 	}
 
 	// Run main:
-	data = require( './../lib' )( opts ); // eslint-disable-line stdlib/no-immediate-require
+	data = require( '@stdlib/datasets-sotu' )( opts ); // eslint-disable-line stdlib/no-immediate-require
 	for ( i = 0; i < data.length; i++ ) {
 		console.log( JSON.stringify( data[ i ] ) ); // eslint-disable-line no-console
 	}
